@@ -1,0 +1,148 @@
+.right {
+    width: 20%;
+    height: 90vh;
+    /* border: 1px solid blue; */
+    margin-left: 50px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 12px 10px 10px 0.5px rgb(108, 107, 107);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-image {
+    width: 210px;
+    height: 210px;
+    
+    margin-bottom: 30px;
+    border-radius: 8px;
+
+    box-shadow: 5px 10px 10px 0.5px rgb(178, 178, 178);
+}
+
+
+.lyrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13px;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+}
+
+.music-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 26px;
+    margin-bottom: 30px;
+
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.artist-name {
+    font-size: 15px;
+    font-weight: 300;
+
+    margin-top: 5px;
+}
+
+.header-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.fa-heart {
+    color: rgb(255, 148, 194);
+}
+
+.fa-heart:hover { 
+    color: black; }
+
+.setting:hover {
+    color: rgb(176, 176, 176);
+}
+
+
+
+.player-controller {
+    /* margin-right: 15px; */
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80px;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 22px;
+}
+
+.fa-play-circle {
+    font-size: 50px;
+}
+
+.play-time {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgb(87, 85, 85);
+    margin-bottom: 3px;
+}
+
+.fa-circle {
+    position: absolute;
+    font-size: 5px;
+    /* margin-top: 2px; */
+    /* margin-bottom: 15px; */
+    top:-3px;
+    left:10px;
+}
+
+.time-bar {
+    position: relative;
+    height:30px;
+}
+
+.time-stamp {
+    /* position: absolute; */
+    height: 4px;
+    width: 270px;
+    border-radius: 40px;
+    background-color: rgb(199, 199, 199);
+    align-items: center;
+
+  }
+
+/* .실행 {
+    margin-top: 16px;
+} */
+
+.재생:hover {
+    color: rgb(176, 176, 176);
+}
+
+/* .섞기 {
+    margin-top: 15px;
+} */
+
+.control-button {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

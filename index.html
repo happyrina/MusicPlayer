@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <script src="https://kit.fontawesome.com/4de62493af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="boss">
+        <div class='light x1'></div>
+        <div class='light x2'></div>
+        <div class='light x3'></div>
+        <div class='light x4'></div>
+        <div class='light x5'></div>
+        <div class='light x6'></div>
+        <div class='light x7'></div>
+        <div class='light x8'></div>
+        <div class='light x9'></div>
+
+        <div class="left">
+            <div class="재생목록">재생목록</div>
+            <div class="menu">
+                <div class="menu-list">노래</div>
+                <div class="menu-list2">플레이리스트</div>
+                <div class="menu-list2">오디오</div>
+                <div class="menu-list2">MY</div>
+            </div>
+            <div class="menu-list-click-box"></div>
+            <div class="bar"></div>
+            <div class="전체곡수">전체 39</div>
+            <div class="song-list">
+                <img class="albumcover"
+                        src="https://musicmeta-phinf.pstatic.net/album/007/432/7432639.jpg?type=r480Fll&v=20220415160812">
+                <div class="songlist-info">
+                    <div class="노래제목1">북극성 (Never Goodbye)</div>
+                    <div class="아티스트1">NCT DREAM</div> 
+                </div>    
+                <span class="listicon"><i class="fa-sharp fa-solid fa-list-ul setting"></i></span>
+            </div>    
+        </div>
+
+        <div class="right">
+            <header class="header-icon">
+                <i class="fa-sharp fa-solid fa-magnifying-glass setting"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-sharp fa-solid fa-bars setting"></i>
+            </header>
+            <div class="music-info">
+                <div>북극성 (Never Goodbye)</div>
+                <div class="artist-name">NCT DREAM</div>
+            </div>
+            <img class="cover-image"
+                src="https://musicmeta-phinf.pstatic.net/album/007/432/7432639.jpg?type=r480Fll&v=20220415160812">
+            <div class="lyrics">함께 가는 방법을 찾을 수 없다면<br>너를 멀리서 늘 비춰줄 거야</bar>
+            </div>
+            <div class="play-time">
+                <span>00:00</span>
+                <span>03:32</span>
+            </div>
+            <div class="time-bar">
+                <div class="time-stamp"></div>
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="player-controller">
+                <div class="control-button"><i class="fas fa-sync-alt 실행 반복"></i></div>
+                <div class="control-button"><i class="fas fa-fast-backward 실행 뒤로가기"></i></div>
+                <div class="control-button"><i class="fas fa-play-circle 재생 play"></i></div>
+                <div class="control-button"><i class="fas fa-fast-forward 실행 앞으로가기"></i></div>
+                <div class="control-button"><i class="fas fa-random 섞기"></i></div>
+            </div>
+            <!-- <audio class="audio" controls src="북극성.mp3">
+            </audio> -->
+        </div>
+    </div>
+
+<script>
+    const playButton = document.querySelector(".play");
+    const music = new Audio("북극성.mp3");
+
+    playButton.addEventListener("click",playMusic);
+
+    function playMusic(evnet) {
+        if(music.paused) {
+            playButton.classList.remove('fa-play-circle');
+            playButton.classList.add('fa-pause');
+            playButton.classList.add('fa-2x');
+            music.play();
+        } else {
+            playButton.classList.remove('fa-pause');
+            playButton.classList.remove('fa-2x');
+            playButton.classList.add('fa-play-circle');
+            music.pause();
+        }
+    }
+
+    const $sky = document.querySelector(".sky"); </script>
+
+    </body>
+ </html>  
